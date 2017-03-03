@@ -5,4 +5,5 @@
   <%= text_field_tag "usernamesearch" %>
   <%= submit_tag("Show") %>
 <% end %>
-<%= link_to 'See all users', :controller => "pages", :action => :allusers %>
+<%= link_to 'See all users', :controller => "pages", :action => :allusers %><br></br>
+<%= link_to 'Refresh superusers page (WARNING: SLOW)', :controller => "pages", :action => :refreshusers %><br></br>

@@ -2,7 +2,14 @@ class PagesController < ApplicationController
   UID = "efed4ffd11a9e8bf9d09f735c5f63fc0c8ce9a5cd50dbcdfcc95f523e728e71a"
   SECRET = "e34de41c45d7f895c8d7387108d0336c1d6f485e82ffc0ef98481ae6033761f1"
 
-  def token_get(username)
+  def token_get
+    client = OAuth2::Client.new(UID, SECRET, site: "https://api.intra.42.fr")
+    token = client.client_credentials.get_token
+    usernamesearchvar = params[:usernamesearch]
+    response = token.get("/v2/users/" + usernamesearchvar)
+  end
+
+  def token_get_2(username)
     client = OAuth2::Client.new(UID, SECRET, site: "https://api.intra.42.fr")
     token = client.client_credentials.get_token
     response = token.get("/v2/users/" + username)
@@ -72,8 +79,7 @@ class PagesController < ApplicationController
   def shower
     #file = File.read('lchimes.json')
     #data_hash = JSON.parse(file)
-    usernamesearchvar = params[:usernamesearch]
-    hold = token_get(usernamesearchvar)
+    hold = token_get
     if hold.status == 200
       data_hash = hold.parsed
       @first_name = data_hash['first_name']
@@ -111,14 +117,9 @@ class PagesController < ApplicationController
 
   def refreshusers
     @refresh = "hey thats pretty good!"
-    ret_arr = Array.new
-    usernames = get_all_usernames
-    for i in 0..usernames.size-1  
-      hold = token_get(usernames[i])
-      data_hash = hold.parsed
-      ret_arr.push(data_hash['first_name'])
+    get_all_usernames.length.times do |i|
+      hold = token_get
     end
-    @refreshusersarr = ret_arr
   end
 
   def show
