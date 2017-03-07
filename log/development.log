@@ -4892,3 +4892,994 @@ Processing by PagesController#shower as HTML
 Completed 200 OK in 78ms (Views: 48.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-03-06 07:39:53 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 492ms (Views: 464.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lvan-gen&commit=Show" for 127.0.0.1 at 2017-03-06 07:40:11 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lvan-gen", "commit"=>"Show"}
+  Rendering pages/shower.html.erb within layouts/application
+  Rendered pages/shower.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 156ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lvan-gen&commit=Show" for 127.0.0.1 at 2017-03-06 09:12:28 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lvan-gen", "commit"=>"Show"}
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Array into Integer):
+  
+app/controllers/pages_controller.rb:44:in `[]'
+app/controllers/pages_controller.rb:44:in `block (2 levels) in unregistered'
+app/controllers/pages_controller.rb:44:in `any?'
+app/controllers/pages_controller.rb:44:in `block in unregistered'
+app/controllers/pages_controller.rb:43:in `unregistered'
+app/controllers/pages_controller.rb:113:in `shower'
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.1ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (125.0ms)
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lvan-gen&commit=Show" for 127.0.0.1 at 2017-03-06 09:13:50 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lvan-gen", "commit"=>"Show"}
+  Rendering pages/shower.html.erb within layouts/application
+  Rendered pages/shower.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 167ms (Views: 123.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lvan-gen&commit=Show" for 127.0.0.1 at 2017-03-06 09:14:42 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lvan-gen", "commit"=>"Show"}
+  Rendering pages/shower.html.erb within layouts/application
+  Rendered pages/shower.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 32ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lvan-gen&commit=Show" for 127.0.0.1 at 2017-03-06 09:15:35 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lvan-gen", "commit"=>"Show"}
+  Rendering pages/shower.html.erb within layouts/application
+  Rendered pages/shower.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 223ms (Views: 189.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lchimes&commit=Show" for 127.0.0.1 at 2017-03-06 09:21:49 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lchimes", "commit"=>"Show"}
+  Rendering pages/shower.html.erb within layouts/application
+  Rendered pages/shower.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 174ms (Views: 122.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lchimes&commit=Show" for 127.0.0.1 at 2017-03-06 09:23:04 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lchimes", "commit"=>"Show"}
+  Rendering pages/shower.html.erb within layouts/application
+  Rendered pages/shower.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 112ms (Views: 78.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lchimes&commit=Show" for 127.0.0.1 at 2017-03-06 09:24:16 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lchimes", "commit"=>"Show"}
+  Rendering pages/shower.html.erb within layouts/application
+  Rendered pages/shower.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 86ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lchimes&commit=Show" for 127.0.0.1 at 2017-03-06 10:09:12 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lchimes", "commit"=>"Show"}
+  Rendering pages/shower.html.erb within layouts/application
+  Rendered pages/shower.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 129ms (Views: 100.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lchimes&commit=Show" for 127.0.0.1 at 2017-03-06 10:09:14 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lchimes", "commit"=>"Show"}
+  Rendering pages/shower.html.erb within layouts/application
+  Rendered pages/shower.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 42ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lchimes&commit=Show" for 127.0.0.1 at 2017-03-06 10:11:38 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lchimes", "commit"=>"Show"}
+  Rendering pages/shower.html.erb within layouts/application
+  Rendered pages/shower.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 141ms (Views: 111.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lchimes&commit=Show" for 127.0.0.1 at 2017-03-06 10:12:53 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lchimes", "commit"=>"Show"}
+  Rendering pages/shower.html.erb within layouts/application
+  Rendered pages/shower.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 109ms (Views: 76.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lchimes&commit=Show" for 127.0.0.1 at 2017-03-06 10:50:26 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lchimes", "commit"=>"Show"}
+  Rendering pages/shower.html.erb within layouts/application
+  Rendered pages/shower.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 150ms (Views: 122.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-06 10:50:42 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 49ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lvan-gen&commit=Show" for 127.0.0.1 at 2017-03-06 10:52:24 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lvan-gen", "commit"=>"Show"}
+  Rendering pages/shower.html.erb within layouts/application
+  Rendered pages/shower.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 153ms (Views: 111.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-06 10:52:44 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 92ms (Views: 89.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lvan-gen&commit=Show" for 127.0.0.1 at 2017-03-06 10:52:56 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lvan-gen", "commit"=>"Show"}
+  Rendering pages/shower.html.erb within layouts/application
+  Rendered pages/shower.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 53ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-06 10:53:58 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 29ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lchimes&commit=Show" for 127.0.0.1 at 2017-03-06 10:54:01 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lchimes", "commit"=>"Show"}
+  Rendering pages/shower.html.erb within layouts/application
+  Rendered pages/shower.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 68ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-06 10:54:30 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lvan-gen&commit=Show" for 127.0.0.1 at 2017-03-06 10:54:33 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lvan-gen", "commit"=>"Show"}
+  Rendering pages/shower.html.erb within layouts/application
+  Rendered pages/shower.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 78ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lvan-gen&commit=Show" for 127.0.0.1 at 2017-03-06 10:57:50 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lvan-gen", "commit"=>"Show"}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Integer into String):
+  
+app/controllers/pages_controller.rb:19:in `+'
+app/controllers/pages_controller.rb:19:in `block in validator'
+app/controllers/pages_controller.rb:14:in `validator'
+app/controllers/pages_controller.rb:109:in `shower'
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (104.1ms)
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lvan-gen&commit=Show" for 127.0.0.1 at 2017-03-06 10:58:13 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lvan-gen", "commit"=>"Show"}
+  Rendering pages/shower.html.erb within layouts/application
+  Rendered pages/shower.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 124ms (Views: 89.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lvan-gen&commit=Show" for 127.0.0.1 at 2017-03-06 12:29:39 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lvan-gen", "commit"=>"Show"}
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/pages_controller.rb:106:in `[]'
+app/controllers/pages_controller.rb:106:in `shower'
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (33.3ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (177.1ms)
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lvan-gen&commit=Show" for 127.0.0.1 at 2017-03-06 12:29:55 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lvan-gen", "commit"=>"Show"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/pages_controller.rb:106:in `[]'
+app/controllers/pages_controller.rb:106:in `shower'
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.9ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.8ms)
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lvan-gen&commit=Show" for 127.0.0.1 at 2017-03-06 12:30:31 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lvan-gen", "commit"=>"Show"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/pages_controller.rb:106:in `[]'
+app/controllers/pages_controller.rb:106:in `shower'
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.9ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (101.2ms)
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lvan-gen&commit=Show" for 127.0.0.1 at 2017-03-06 12:32:02 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lvan-gen", "commit"=>"Show"}
+  Rendering pages/shower.html.erb within layouts/application
+  Rendered pages/shower.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 115ms (Views: 111.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-06 12:51:12 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 80ms (Views: 76.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 12:51:14 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (26.1ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each_with_index' for nil:NilClass):
+    3: <p><%= @test %></p><br></br>
+    4: <p><%= @list %></p><br></br>
+    5: <tbody>
+    6:   <% @rows_vals.each_with_index do |row, index| %>
+    7:     <tr>
+    8:       <td> <%= @name_column[index] %> </td>
+    9:       <% row.each do |value| %>
+  
+app/views/pages/allusers.html.erb:6:in `_app_views_pages_allusers_html_erb___2193979008250023536_70093924827240'
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.4ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (136.8ms)
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 12:51:38 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 14:28:42 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 175ms (Views: 154.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 14:30:22 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 108ms (Views: 76.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-06 14:30:29 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 42ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 14:45:52 +0200
+Processing by PagesController#allusers as HTML
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Integer into Array):
+  
+app/controllers/pages_controller.rb:104:in `-'
+app/controllers/pages_controller.rb:104:in `get_all_user_info_arr'
+app/controllers/pages_controller.rb:147:in `allusers'
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.7ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (135.6ms)
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 14:52:17 +0200
+Processing by PagesController#allusers as HTML
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/pages_controller.rb:105:in `+'
+app/controllers/pages_controller.rb:105:in `block in get_all_user_info_arr'
+app/controllers/pages_controller.rb:104:in `get_all_user_info_arr'
+app/controllers/pages_controller.rb:147:in `allusers'
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.1ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (123.7ms)
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 14:52:41 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 423ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for 0..131:Range):
+     5: <table style="width:100%">
+     6:   <% for i in 0..@test.size-1 %>
+     7:     <tr>
+     8:       <% for j in 0..@test[i].size-1 %>
+     9:         <td> <%= @test[i][j] %> </td>
+    10:       <% end %>
+    11:     </tr>
+  
+app/views/pages/allusers.html.erb:8:in `block in _app_views_pages_allusers_html_erb___2193979008250023536_70093932220460'
+app/views/pages/allusers.html.erb:6:in `_app_views_pages_allusers_html_erb___2193979008250023536_70093932220460'
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.7ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (102.8ms)
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 14:53:50 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 122ms (Views: 102.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 14:54:53 +0200
+Processing by PagesController#allusers as HTML
+Completed 500 Internal Server Error in 184ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `mass_infoi' for #<PagesController:0x007f8005432ee8>
+Did you mean?  mass_info):
+  
+app/controllers/pages_controller.rb:107:in `block in get_all_user_info_arr'
+app/controllers/pages_controller.rb:104:in `get_all_user_info_arr'
+app/controllers/pages_controller.rb:148:in `allusers'
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (161.3ms)
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 14:55:07 +0200
+Processing by PagesController#allusers as HTML
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]=' for nil:NilClass):
+  
+app/controllers/pages_controller.rb:107:in `block in get_all_user_info_arr'
+app/controllers/pages_controller.rb:104:in `get_all_user_info_arr'
+app/controllers/pages_controller.rb:148:in `allusers'
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.5ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (109.6ms)
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 14:56:26 +0200
+Processing by PagesController#allusers as HTML
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]=' for nil:NilClass):
+  
+app/controllers/pages_controller.rb:107:in `block in get_all_user_info_arr'
+app/controllers/pages_controller.rb:104:in `get_all_user_info_arr'
+app/controllers/pages_controller.rb:149:in `allusers'
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (58.1ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (174.8ms)
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 15:02:33 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 218ms (Views: 161.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 15:03:59 +0200
+Processing by PagesController#allusers as HTML
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/pages_controller.rb:155:in `allusers'
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.2ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (103.9ms)
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 15:04:36 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 123ms (Views: 98.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 15:05:02 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 41ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 15:05:13 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 91ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 15:06:04 +0200
+Processing by PagesController#allusers as HTML
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/pages_controller.rb:155:in `allusers'
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (146.2ms)
+Started GET "/" for 127.0.0.1 at 2017-03-06 15:06:31 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 91ms (Views: 88.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 15:06:34 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 80ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 15:08:58 +0200
+Processing by PagesController#allusers as HTML
+Completed 500 Internal Server Error in 136ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `data_hash' for #<PagesController:0x007f80078f40d8>
+Did you mean?  @data_hash):
+  
+app/controllers/pages_controller.rb:155:in `allusers'
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.3ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (153.5ms)
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 15:09:18 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 123ms (Views: 84.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 15:09:47 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 70ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 15:10:10 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 29ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 15:10:13 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 41ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 15:10:35 +0200
+Processing by PagesController#allusers as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]=' for nil:NilClass):
+  
+app/controllers/pages_controller.rb:155:in `allusers'
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.4ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (105.0ms)
+Started GET "/" for 127.0.0.1 at 2017-03-06 15:58:45 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 125ms (Views: 120.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 15:58:48 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 152ms (Views: 69.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 15:59:03 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 85ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 15:59:48 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 76ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 16:02:43 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 156ms (Views: 117.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 16:03:45 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (59.7ms)
+Completed 200 OK in 367ms (Views: 162.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 16:04:54 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 275ms (Views: 85.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 16:05:25 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 423ms (Views: 139.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-06 16:11:49 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 155ms (Views: 145.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lvan-gen&commit=Show" for 127.0.0.1 at 2017-03-06 16:11:55 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lvan-gen", "commit"=>"Show"}
+  Rendering pages/shower.html.erb within layouts/application
+  Rendered pages/shower.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 111ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 16:12:42 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 452ms (Views: 151.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=kpitso&commit=Show" for 127.0.0.1 at 2017-03-06 16:13:24 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"kpitso", "commit"=>"Show"}
+  Rendering pages/shower.html.erb within layouts/application
+  Rendered pages/shower.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 130ms (Views: 103.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=nbanza&commit=Show" for 127.0.0.1 at 2017-03-06 16:13:50 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"nbanza", "commit"=>"Show"}
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - app/fixtures/userlist/nbanza.json):
+  
+app/controllers/pages_controller.rb:116:in `read'
+app/controllers/pages_controller.rb:116:in `shower'
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.8ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (21.4ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (144.5ms)
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=ngbanza&commit=Show" for 127.0.0.1 at 2017-03-06 16:14:00 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"ngbanza", "commit"=>"Show"}
+  Rendering pages/shower.html.erb within layouts/application
+  Rendered pages/shower.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 174ms (Views: 136.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-06 16:19:27 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 102ms (Views: 96.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 16:19:30 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 538ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-06 16:20:04 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 135ms (Views: 131.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 16:20:06 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 629ms (Views: 67.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 16:20:13 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 306ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 16:23:06 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 850ms (Views: 144.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/shower?utf8=%E2%9C%93&usernamesearch=lvan-gen&commit=Show" for 127.0.0.1 at 2017-03-06 16:23:11 +0200
+Processing by PagesController#shower as HTML
+  Parameters: {"utf8"=>"✓", "usernamesearch"=>"lvan-gen", "commit"=>"Show"}
+  Rendering pages/shower.html.erb within layouts/application
+  Rendered pages/shower.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 48ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 16:23:19 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 362ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 16:26:02 +0200
+  
+SyntaxError (/Users/Havengul/Work/Internship/branch/Mr_intra/app/controllers/pages_controller.rb:155: syntax error, unexpected tIDENTIFIER, expecting ']'
+emp_info[0] = data_hash['login']
+                              ^
+/Users/Havengul/Work/Internship/branch/Mr_intra/app/controllers/pages_controller.rb:155: unterminated string meets end of file
+/Users/Havengul/Work/Internship/branch/Mr_intra/app/controllers/pages_controller.rb:155: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/pages_controller.rb:155: syntax error, unexpected tIDENTIFIER, expecting ']'
+app/controllers/pages_controller.rb:155: unterminated string meets end of file
+app/controllers/pages_controller.rb:155: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.2ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (106.3ms)
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 16:26:48 +0200
+  
+SyntaxError (/Users/Havengul/Work/Internship/branch/Mr_intra/app/controllers/pages_controller.rb:151: syntax error, unexpected keyword_for, expecting ')'
+    for i in 0..userlist.size-1
+       ^):
+  
+app/controllers/pages_controller.rb:151: syntax error, unexpected keyword_for, expecting ')'
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.9ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (263.0ms)
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 16:27:06 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 364ms (Views: 99.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 16:27:37 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 408ms (Views: 87.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 16:51:39 +0200
+  
+SyntaxError (/Users/Havengul/Work/Internship/branch/Mr_intra/app/controllers/pages_controller.rb:162: syntax error, unexpected keyword_else, expecting keyword_end
+	else
+	    ^
+/Users/Havengul/Work/Internship/branch/Mr_intra/app/controllers/pages_controller.rb:180: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/pages_controller.rb:162: syntax error, unexpected keyword_else, expecting keyword_end
+app/controllers/pages_controller.rb:180: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (24.0ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (148.4ms)
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 16:52:16 +0200
+Processing by PagesController#allusers as HTML
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/pages_controller.rb:159:in `[]'
+app/controllers/pages_controller.rb:159:in `block (3 levels) in allusers'
+app/controllers/pages_controller.rb:158:in `block (2 levels) in allusers'
+app/controllers/pages_controller.rb:156:in `block in allusers'
+app/controllers/pages_controller.rb:151:in `allusers'
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (28.0ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (120.6ms)
+Started GET "/" for 127.0.0.1 at 2017-03-06 16:54:55 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 136ms (Views: 133.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 16:54:57 +0200
+Processing by PagesController#allusers as HTML
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/pages_controller.rb:159:in `[]'
+app/controllers/pages_controller.rb:159:in `block (3 levels) in allusers'
+app/controllers/pages_controller.rb:158:in `block (2 levels) in allusers'
+app/controllers/pages_controller.rb:156:in `block in allusers'
+app/controllers/pages_controller.rb:151:in `allusers'
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (121.2ms)
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 16:56:50 +0200
+Processing by PagesController#allusers as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+IndexError (index 5 out of string):
+  
+app/controllers/pages_controller.rb:166:in `[]='
+app/controllers/pages_controller.rb:166:in `block (2 levels) in allusers'
+app/controllers/pages_controller.rb:156:in `block in allusers'
+app/controllers/pages_controller.rb:151:in `allusers'
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.1ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (152.9ms)
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 16:58:08 +0200
+Processing by PagesController#allusers as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/pages_controller.rb:159:in `[]'
+app/controllers/pages_controller.rb:159:in `block (3 levels) in allusers'
+app/controllers/pages_controller.rb:158:in `block (2 levels) in allusers'
+app/controllers/pages_controller.rb:156:in `block in allusers'
+app/controllers/pages_controller.rb:151:in `allusers'
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.4ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (152.1ms)
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 17:00:23 +0200
+Processing by PagesController#allusers as HTML
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]=' for 11:Integer
+Did you mean?  []):
+  
+app/controllers/pages_controller.rb:166:in `block (2 levels) in allusers'
+app/controllers/pages_controller.rb:156:in `block in allusers'
+app/controllers/pages_controller.rb:151:in `allusers'
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Havengul/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (95.2ms)
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 17:01:03 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 387ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 17:02:01 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (53.6ms)
+Completed 200 OK in 237ms (Views: 75.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 17:03:13 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 184ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/allusers" for 127.0.0.1 at 2017-03-06 17:04:06 +0200
+Processing by PagesController#allusers as HTML
+  Rendering pages/allusers.html.erb within layouts/application
+  Rendered pages/allusers.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 896ms (Views: 290.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-07 07:41:28 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (30.6ms)
+Completed 200 OK in 556ms (Views: 528.4ms | ActiveRecord: 0.0ms)
+
+

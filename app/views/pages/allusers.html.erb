@@ -1,4 +1,12 @@
 <h1> All Users </h1>
 <%= link_to 'Home', root_path %><br></br>
-<p><%= @test %></p><br></br>
 <p><%= @list %></p><br></br>
+<table style="width:100%">
+  <% for i in 0..@test.size-1 %>
+    <tr>
+      <% for j in 0..@test[i].size-1 %>
+        <td> <%= @test[i][j] %> </td>
+      <% end %>
+    </tr>
+  <% end %>
+</tbody>
