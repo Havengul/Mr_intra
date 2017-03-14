@@ -1,7 +1,8 @@
 class PagesController < ApplicationController
   UID = "efed4ffd11a9e8bf9d09f735c5f63fc0c8ce9a5cd50dbcdfcc95f523e728e71a"
   SECRET = "e34de41c45d7f895c8d7387108d0336c1d6f485e82ffc0ef98481ae6033761f1"
-  PROJECTS = ['bootcamp-day-00', 'bootcamp-day-01', 'bootcamp-day-02', 'bootcamp-day-03', 'bootcamp-day-04', 'bootcamp-day-05', 'bootcamp-day-06', 'bootcamp-day-07', 'bootcamp-day-08', 'bootcamp-day-09', 'bootcamp-day-10', 'bootcamp-day-11', 'bootcamp-day-12', 'bootcamp-day-13', 'bootcamp-sastantua', 'bootcamp-match-n-match', 'bootcamp-evalexpr', 'bootcamp-colle-00', 'bootcamp-colle-01', 'bootcamp-colle-02', 'bootcamp-joburg-exam-00', 'bootcamp-joburg-exam-01', 'bootcamp-joburg-exam-02', 'bootcamp-joburg-final-exam', 'bootcamp-bsq']
+  temp_file = File.open("app/fixtures/projectlist.txt")
+  PROJECTS = temp_file.read.split
   def token_get(username)
     client = OAuth2::Client.new(UID, SECRET, site: "https://api.intra.42.fr")
     token = client.client_credentials.get_token
@@ -10,39 +11,64 @@ class PagesController < ApplicationController
 
   def validator(data_hash)
     ret_arr = Array.new()
-    for i in 0..data_hash['projects_users'].size-1
-      if data_hash['projects_users'][i]['final_mark']
-	if data_hash['projects_users'][i]['final_mark'] > 0
-	  hold = data_hash['projects_users'][i]['project']['name']
-	  hold2 = data_hash['projects_users'][i]['final_mark']
-          ret_arr.push("____(" + hold + " with " + hold2.to_s + "%)")
+    for j in 0..PROJECTS.size-1
+      for i in 0..data_hash['projects_users'].size-1
+        if data_hash['projects_users'][i]['project']['slug'] == PROJECTS[j] 
+          if data_hash['projects_users'][i]['final_mark']
+            if data_hash['projects_users'][i]['final_mark'] > 0
+              temp_arr = Array.new()
+              hold = data_hash['projects_users'][i]['project']['name']
+              hold2 = data_hash['projects_users'][i]['final_mark']
+              temp_arr.push(hold)
+              temp_arr.push(hold2)
+              ret_arr.push(temp_arr)
+            end
+          end
         end
       end
     end
-    return ret_arr.to_sentence
+    return ret_arr
   end
 
   def invalidator(data_hash)
     ret_arr = Array.new()
-    for i in 0..data_hash['projects_users'].size-1
-      if data_hash['projects_users'][i]['final_mark'] == false || data_hash['projects_users'][i]['final_mark'] == 0
-        hold = data_hash['projects_users'][i]['project']['name']
-	ret_arr.push("____(" + hold + ")")
-      end
+    for j in 0..PROJECTS.size-1
+      for i in 0..data_hash['projects_users'].size-1
+        if data_hash['projects_users'][i]['project']['slug'] == PROJECTS[j]
+          if data_hash['projects_users'][i]['final_mark'] == false || data_hash['projects_users'][i]['final_mark'] == 0
+            hold = data_hash['projects_users'][i]['project']['name']
+            ret_arr.push(hold)
+          end
+        end
+      end  
     end
-    return ret_arr.to_sentence
+    return ret_arr
   end
 
   def unregistered(data_hash)
     ret_arr = Array.new()
-    @test_arr = Array.new()
     for i in 0..PROJECTS.size-1
       if not data_hash['projects_users'].any? {|h| h['project']['slug'] == PROJECTS[i]}
 	hold = PROJECTS[i]
-	ret_arr.push("____(" + hold + ")")
+	ret_arr.push(hold)
       end
     end
-    return ret_arr.to_sentence
+    return ret_arr
+  end
+
+  def unmarked(data_hash)
+    ret_arr = Array.new()
+    for i in 0..PROJECTS.size-1
+      for j in 0..data_hash['projects_users'].size-1
+        if (data_hash['projects_users'][j]['project']['slug'] <=> PROJECTS[i]) == 0
+          if data_hash['projects_users'][j]['final_mark'] == NIL
+            hold = data_hash['projects_users'][j]['project']['name']
+            ret_arr.push(hold)
+          end
+	end
+      end	
+    end
+    return ret_arr
   end
 
   def achiever(data_hash)
@@ -94,10 +120,6 @@ class PagesController < ApplicationController
     return usernames
   end
 
-  def get_user_info(name)
-    
-  end
-
   def get_all_user_info_arr
     userlist = get_all_usernames
     mass_info = Array.new()
@@ -110,6 +132,233 @@ class PagesController < ApplicationController
       end
     end
     return mass_info
+  end
+
+  def get_average_marks(data_array)
+    avg = 0
+    for i in 1..data_array.size-1
+      data_array[i] = data_array[i].to_i unless data_array[i].match(/[^[:digit:]]+/)
+    end
+    for i in 1..14
+      if Integer === data_array[i]
+	avg += data_array[i].to_i
+      elsif data_array[i] == "-42"
+	avg = avg -42
+      elsif data_array[i] == "--"
+        avg = avg -1
+      elsif data_array[i] == "**"
+        avg = avg -2
+      end
+    end
+    for i in 15..20
+      if Integer === data_array[i]
+        avg += data_array[i].to_i * 2
+      elsif data_array[i] == "-42"
+        avg = avg -42 * 2
+      elsif data_array[i] == "--"
+        avg = avg -2
+      elsif data_array[i] == "**"
+        avg = avg -4
+      end
+    end
+    for i in 21..24
+      if Integer === data_array[i]
+        avg += data_array[i].to_i * 3
+      elsif data_array[i] == "-42"
+        avg = avg -42 * 3
+      elsif data_array[i] == "--" || data_array[i] == "**"
+        avg = avg -3
+      end
+    end
+    bonus = 0
+    if Integer === data_array[25]
+      avg += data_array[25].to_i * 2
+      bonus = 2
+    elsif data_array[25] == "-42"
+      avg = avg -42
+    end
+    if data_array[0] == "amoila"
+      @avgtest = data_array
+    end
+    return (avg.to_f / (38 + bonus)).round(1)
+  end
+
+  def get_mass_info
+    userlist = get_all_usernames
+    mass_info = Array.new()
+    my_file = File.open("app/fixtures/projectlistdisplay.txt")
+    mass_info.push(my_file.read.split)
+    for i in 0..userlist.size-1
+      file = File.read("app/fixtures/userlist/" + userlist[i] + ".json")
+      data_hash = JSON.parse(file)
+      temp_info = Array.new()
+      temp_info[0] = data_hash['login']
+      for k in 0..PROJECTS.size-1
+        if data_hash['projects_users'].any? {|h| h['project']['slug'] == PROJECTS[k]}
+          for j in 0..data_hash['projects_users'].size-1
+            if data_hash['projects_users'][j]['project']['slug'] == PROJECTS[k]
+	      if data_hash['projects_users'][j]['final_mark']
+		temp_info << data_hash['projects_users'][j]['final_mark'].to_s
+	      else
+		temp_info << "**"
+	      end
+	    end
+          end
+        else
+          temp_info << "--"
+        end
+      end
+      temp_info << get_average_marks(temp_info)
+      mass_info << temp_info
+    end
+    return mass_info
+  end
+
+  def has_cheated(data_hash)
+    retval = "no"
+    for j in 0..PROJECTS.size-1
+      for i in 0..data_hash['projects_users'].size-1
+        if data_hash['projects_users'][i]['project']['slug'] == PROJECTS[j]
+          if data_hash['projects_users'][i]['final_mark']
+            if data_hash['projects_users'][i]['final_mark'].to_i == -42
+              retval = "yes"
+            end
+          end
+        end
+      end
+    end
+    return retval
+  end
+
+  def get_num_validated(data_hash)
+    totalval = 0
+    for j in 0..PROJECTS.size-1
+      for i in 0..data_hash['projects_users'].size-1
+        if (j < 20 || j == 24)
+          if data_hash['projects_users'][i]['project']['slug'] == PROJECTS[j]
+            if data_hash['projects_users'][i]['final_mark']
+              if data_hash['projects_users'][i]['final_mark'] >= 25
+                totalval += 1
+              end
+            end
+          end
+	end
+      end
+    end
+    return totalval
+  end
+
+  def get_num_exams_validated(data_hash)
+    totalval = 0
+    for j in 20..23
+      for i in 0..data_hash['projects_users'].size-1
+        if data_hash['projects_users'][i]['project']['slug'] == PROJECTS[j]
+          if data_hash['projects_users'][i]['final_mark']
+            if data_hash['projects_users'][i]['final_mark'] >= 25
+              totalval += 1
+            end
+          end
+        end
+      end
+    end
+    return totalval
+  end
+
+  def get_num_exams_missed(data_hash)
+    count = 0
+    for j in 20..23
+      if not data_hash['projects_users'].any? {|h| h['project']['slug'] == PROJECTS[j]}
+        count += 1
+      end
+      for i in 0..data_hash['projects_users'].size-1
+        if data_hash['projects_users'][i]['project']['slug'] == PROJECTS[j]
+          if data_hash['projects_users'][i]['final_mark'] == NIL
+            count += 1
+	  end
+        end
+      end
+    end
+    return count
+  end
+
+  def check_final_exam(data_hash)
+    for i in 0..data_hash['projects_users'].size-1
+      if data_hash['projects_users'][i]['project']['slug'] == PROJECTS[23]
+        if data_hash['projects_users'][i]['final_mark']
+          if data_hash['projects_users'][i]['final_mark'] >= 25
+            return 1
+          end
+        end
+      end
+     end
+    return 0
+  end
+
+  def check_all_exam(data_hash)
+    for j in 20..22
+      for i in 0..data_hash['projects_users'].size-1
+        if data_hash['projects_users'][i]['project']['slug'] == PROJECTS[j]
+          if data_hash['projects_users'][i]['final_mark']
+            if data_hash['projects_users'][i]['final_mark'] >= 25
+              return 1
+            end
+          end
+        end
+      end
+    end
+    return 0
+  end
+
+  def get_scores(data_hash)
+    score_arr = Array.new()
+    if has_cheated(data_hash) == "no"
+      score_arr.push(["cheating", 1])
+    else
+      score_arr.push(["cheating", 0])
+    end
+    if get_num_validated(data_hash) >= 5
+      score_arr.push(["validation", 1])
+    else
+      score_arr.push(["validation", 0])
+    end
+    if check_final_exam(data_hash) == 1
+      score_arr.push(["final exam", 1])
+    else
+      score_arr.push(["final exam", 0])
+    end
+    if check_all_exam(data_hash) == 1
+      score_arr.push(["other exams", 1])
+    else
+      score_arr.push(["other exams", 0])
+    end
+    temp_info = Array.new()
+    temp_info[0] = data_hash['login']
+    for k in 0..PROJECTS.size-1
+      if data_hash['projects_users'].any? {|h| h['project']['slug'] == PROJECTS[k]}
+        for j in 0..data_hash['projects_users'].size-1
+          if data_hash['projects_users'][j]['project']['slug'] == PROJECTS[k]
+            if data_hash['projects_users'][j]['final_mark']
+              temp_info << data_hash['projects_users'][j]['final_mark'].to_s
+            else
+              temp_info << "**"
+            end
+          end
+        end
+      else
+        temp_info << "--"
+      end
+    end
+    if get_average_marks(temp_info) >= 10
+      score_arr.push(["average above 10", 1])
+    else
+      score_arr.push(["average above 10", 0])
+    end
+    final_score = 0
+    for i in 0..score_arr.size-1
+      final_score += score_arr[i][1]
+    end
+    @final_score = final_score
+    return score_arr
   end
 
   def shower
@@ -126,6 +375,13 @@ class PagesController < ApplicationController
     @validated_arr = validator(data_hash)
     @invalidated_arr = invalidator(data_hash)
     @unregistered_arr = unregistered(data_hash)
+    @unmarked_arr = unmarked(data_hash)
+    @num_validated = get_num_validated(data_hash)
+    @num_exams_validated = get_num_exams_validated(data_hash)
+    @num_missed = @unregistered_arr.size + @unmarked_arr.size
+    @num_exam_missed = get_num_exams_missed(data_hash)
+    @has_cheated = has_cheated(data_hash)
+    @score_arr = get_scores(data_hash)
     @hash = data_hash
     if data_hash['achievements'].any?
       @achievements = achiever(data_hash)
@@ -145,29 +401,7 @@ class PagesController < ApplicationController
   end
 
   def allusers
-    userlist = get_all_usernames
-    mass_info = Array.new()
-    mass_info.push(['Name', '00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', 'Sast', 'Match', 'Eval', 'Col00', 'Col01', 'Col02', 'Exam00', 'Exam01', 'Exam02', 'FINAL EXAM', 'BSQ'])
-    for i in 0..userlist.size-1
-      file = File.read("app/fixtures/userlist/" + userlist[i] + ".json")
-      temp_info = Array.new()
-      data_hash = JSON.parse(file)
-      temp_info[0] = data_hash['login']
-      for k in 0..PROJECTS.size-1
-        if data_hash['projects_users'].any? {|h| h['project']['slug'] == PROJECTS[k]}
-          for j in 0..data_hash['projects_users'].size-1
-	    if data_hash['projects_users'][j]['project']['slug'] == PROJECTS[k]
-	      temp_info << data_hash['projects_users'][j]['final_mark'].to_s
-	    end
-	  end
-	else
-	  temp_info << "--"
-	end
-      end
-      mass_info << temp_info
-    end
-    @test = mass_info
-    @list = get_all_usernames
+    @mass_info = get_mass_info
   end
 
   def refreshusers
